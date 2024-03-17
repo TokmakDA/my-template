@@ -6,46 +6,51 @@
 
 ### Frontend
 
-- [React](https://reactjs.org/) - библиотека для создания пользовательских интерфейсов
-- [Vite](https://vitejs.dev/) - быстрый сборщик и сервер разработки
-- [React Router](https://reactrouter.com/) - навигация в приложении React
-- [Redux Toolkit](https://redux-toolkit.js.org/) - удобное управление состоянием
-- [React Hook Form](https://react-hook-form.com/) - управление формами в React
-- [Yup](https://github.com/jquense/yup) - валидация данных в JavaScript
-- [Axios](https://axios-http.com/) - HTTP-клиент для браузера и Node.js
+- [React](https://reactjs.org/) - Библиотека для создания пользовательских интерфейсов.
+- [Vite](https://vitejs.dev/) - Быстрый инструмент сборки для разработки веб-приложений.
+- [React Router](https://reactrouter.com/) - Навигация в приложении React
+- [Redux Toolkit](https://redux-toolkit.js.org/) - Библиотека для управления состоянием в React приложениях.
+- [React Hook Form](https://react-hook-form.com/) - Библиотека для управления формами в React приложениях с использованием хуков.
+- [Yup](https://github.com/jquense/yup) - Библиотека для валидации данных в JavaScript.
+- [Axios](https://axios-http.com/) - Библиотека для выполнения HTTP-запросов из браузера или Node.js.
 
 ### Инструменты
 
 - [TypeScript](https://www.typescriptlang.org/) - статическая типизация для JavaScript
-- [ESLint](https://eslint.org/) - линтер для JavaScript и TypeScript
-- [Prettier](https://prettier.io/) - форматтер кода
-- [Sass](https://sass-lang.com/) - препроцессор CSS
+- [ESLint](https://eslint.org/) - Инструмент статического анализа кода для обнаружения ошибок.
+- [Prettier](https://prettier.io/) - Инструмент для форматирования кода
+- [Sass](https://sass-lang.com/) - Препроцессор CSS
 
 ### Дополнительные инструменты
 
 - [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) - резолверы для React Hook Form
 - [@vitejs/plugin-react](https://github.com/vitejs/vite/tree/main/packages/plugin-react) - плагин для работы с React в Vite
 - [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) - плагин для работы с SVG в Vite
-<!-- - [generate-react-cli](https://www.npmjs.com/package/generate-react-cli) - CLI для генерации React компонентов -->
 
 Этот стек технологий позволяет создавать современные веб-приложения на базе React с использованием TypeScript, быстрой сборки через Vite, удобным управлением состоянием через Redux Toolkit, работой с формами и валидацией данных.
+
+## Разработка
+
+### Установка
+
+Для установки зависимостей выполните следующие команды:
+`npm install`/`npm i`
+
+### Запуск проекта
+
+Для запуска проекта выполните:
+`npm run dev`
 
 ## Скрипты
 
 `npm run `
 
-- `dev`/`start` - запуск сервера разработки и открытие браузера
-- `build` - сборка для продакшена
-- `preview` - локальный просмотр собранного проекта
-- `lint:fix` - запуск линтера с исправлениями
-- `format` - запуск Prettier
+- `dev`/`start` - Запуск сервера разработки и открытие браузера
+- `build` - Сборка для продакшена
+- `preview` - Локальный просмотр собранного проекта
+- `lint` - Проверка кода на соответствие стандартам с помощью ESLint.
+- `lint:fix` - Автоматическое исправление ошибок в коде с помощью ESLint.
+- `format` - Форматирование кода с помощью Prettier.
+- `test` - Запуск тестов с помощью Vitest.
+- `type-check` - Проверка типов с помощью TypeScript без генерации файлов выходного кода.
 
-<!-- ## Генерация компонентов
-
-Для генерации компонентов можно использовать `generate-react-cli`. Например:
-
-```bash
-npx generate-react-cli component Button
-npx generate-react-cli component NavBar --type=default
-npx generate-react-cli component Home --type=page
-``` -->
