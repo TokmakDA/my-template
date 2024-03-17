@@ -1,0 +1,131 @@
+@mixin respond($breakpoint) {
+  @if ($breakpoint == medium) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == small) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+@mixin background(
+  $imgpath,
+  $position: 50% 50%,
+  $repeat: no-repeat,
+  $size: cover
+) {
+  background: {
+    position: $position;
+    image: url($imgpath);
+    repeat: $repeat;
+    size: $size;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+@mixin font-family($family) {
+  font-family: $family;
+}
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+@mixin line-height($height) {
+  line-height: $height;
+}
+
+@mixin text-style($size, $family, $weight: 400, $height: 100%) {
+  @include font-size($size);
+  @include font-family($family);
+  @include font-weight($weight);
+  @include line-height($height);
+  @content;
+}
+
+@mixin primary-font-h1 {
+  @include text-style(65px, $primary-ff, 600) {
+    @content;
+  }
+}
+
+@mixin primary-font-h2 {
+  @include text-style(50px, $primary-ff, 600) {
+    @content;
+  }
+}
+
+@mixin primary-font-t1 {
+  @include text-style(18px, $primary-ff, 600) {
+    @content;
+  }
+}
+
+@mixin primary-font-t2 {
+  @include text-style(16px, $primary-ff) {
+    @content;
+  }
+}
+@mixin primary-font-t3 {
+  @include text-style(14px, $primary-ff) {
+    @content;
+  }
+}
+
+@mixin secondary-font-t1 {
+  @include text-style(40px, $secondary-ff, 600) {
+    @content;
+  }
+}
+
+@mixin secondary-font-t2 {
+  @include text-style(18px, $secondary-ff, 600) {
+    @content;
+  }
+}
+
+@mixin secondary-font-t3 {
+  @include text-style(16px, $secondary-ff) {
+    @content;
+  }
+}
+
+@mixin secondary-font-t4 {
+  @include text-style(14px, $secondary-ff) {
+    @content;
+  }
+}
+
+@mixin secondary-font-t5 {
+  @include text-style(12px, $secondary-ff) {
+    @content;
+  }
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
