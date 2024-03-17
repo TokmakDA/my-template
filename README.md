@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + SCSS + Redux + ESLint + Pretter + React Hook Form + Yup + Axios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот шаблон представляет собой простой стартовый набор для разработки на React с использованием TypeScript и Vite. В нем уже настроены инструменты и библиотеки для удобной разработки веб-приложений.
 
-Currently, two official plugins are available:
+## Стек технологий
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/) - библиотека для создания пользовательских интерфейсов
+- [Vite](https://vitejs.dev/) - быстрый сборщик и сервер разработки
+- [React Router](https://reactrouter.com/) - навигация в приложении React
+- [Redux Toolkit](https://redux-toolkit.js.org/) - удобное управление состоянием
+- [React Hook Form](https://react-hook-form.com/) - управление формами в React
+- [Yup](https://github.com/jquense/yup) - валидация данных в JavaScript
+- [Axios](https://axios-http.com/) - HTTP-клиент для браузера и Node.js
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Инструменты
 
-- Configure the top-level `parserOptions` property like this:
+- [TypeScript](https://www.typescriptlang.org/) - статическая типизация для JavaScript
+- [ESLint](https://eslint.org/) - линтер для JavaScript и TypeScript
+- [Prettier](https://prettier.io/) - форматтер кода
+- [Sass](https://sass-lang.com/) - препроцессор CSS
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+### Дополнительные инструменты
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) - резолверы для React Hook Form
+- [@vitejs/plugin-react](https://github.com/vitejs/vite/tree/main/packages/plugin-react) - плагин для работы с React в Vite
+- [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) - плагин для работы с SVG в Vite
+<!-- - [generate-react-cli](https://www.npmjs.com/package/generate-react-cli) - CLI для генерации React компонентов -->
+
+Этот стек технологий позволяет создавать современные веб-приложения на базе React с использованием TypeScript, быстрой сборки через Vite, удобным управлением состоянием через Redux Toolkit, работой с формами и валидацией данных.
+
+## Скрипты
+
+`npm run `
+
+- `dev`/`start` - запуск сервера разработки и открытие браузера
+- `build` - сборка для продакшена
+- `preview` - локальный просмотр собранного проекта
+- `lint:fix` - запуск линтера с исправлениями
+- `format` - запуск Prettier
+
+<!-- ## Генерация компонентов
+
+Для генерации компонентов можно использовать `generate-react-cli`. Например:
+
+```bash
+npx generate-react-cli component Button
+npx generate-react-cli component NavBar --type=default
+npx generate-react-cli component Home --type=page
+``` -->
